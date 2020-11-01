@@ -7,6 +7,8 @@ def test_is_sunk1():
     #add at least four more tests for is_sunk by the project submission deadline
 
 def test_ship_type1():
+    print("Hello World!")
+    print(nothing)
     #add at least one test for ship_type by the deadline of session 7 assignment
     #provide at least five tests in total for ship_type by the project submission deadline
 

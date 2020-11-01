@@ -12,11 +12,19 @@ def test_ship_type1():
     #provide at least five tests in total for open_sea by the project submission deadline
 
 def test_is_open_sea1():
-    #add at least one test for open_sea by the deadline of session 7 assignment
+    s1 = (2, 3, False, 3, {(2,3), (3,3), (4,3)})
+    s2 = (6, 7, True, 6, {(6,7), (7,7), (8,7)})
+    fleet = [s1,s2]
+    rcf = (4,5,fleet)
+    assert is_open_sea1(rcf) == True
     #provide at least five tests in total for open_sea by the project submission deadline
 
 def test_ok_to_place_ship_at1():
-    #add at least one test for ok_to_place_ship_at by the deadline of session 7 assignment
+    s1 = (2, 3, False, 3, {(2,3), (3,3), (4,3)})
+    s2 = (6, 7, True, 3, {(6,7), (7,7), (8,7)})
+    fleet = [s1,s2]
+    sf = (4,5, True,4,fleet)
+    assert test_ok_to_place_ship_at1(sf) == True
     #provide at least five tests in total for ok_to_place_ship_at by the project submission deadline
 
 def test_place_ship_at1():

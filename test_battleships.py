@@ -28,18 +28,35 @@ def test_ok_to_place_ship_at1():
     #provide at least five tests in total for ok_to_place_ship_at by the project submission deadline
 
 def test_place_ship_at1():
-    #add at least one test for place_ship_at by the deadline of session 7 assignment
+    s1 = (2, 3, False, 3, {(2,3), (3,3), (4,3)})
+    s2 = (6, 7, True, 3, {(6,7), (7,7), (8,7)})
+    fleet = [s1,s2]
+    s3 = (4,5, True,4)
+    ns = (s3,fleet)
+    assert test_place_ship_at1(ns) == [s1,s2,s3]
     #provide at least five tests in total for place_ship_at by the project submission deadline
 
 def test_check_if_hits1():
-    #add at least one test for check_if_hits by the deadline of session 7 assignment
+    s1 = (2, 3, False, 3, {(2,3), (3,3), (4,3)})
+    s2 = (6, 7, True, 3, {(6,7), (7,7), (8,7)})
+    fleet = [s1,s2]
+    ih=(8,9,fleet)
+    assert check_if_hits1(ih) == False
     #provide at least five tests in total for check_if_hits by the project submission deadline
 
 def test_hit1():
-    #add at least one test for hit by the deadline of session 7 assignment
+    s1 = (2, 3, False, 3, {(2,3), (3,3), (4,3)})
+    s2 = (6, 7, True, 3, {(6,7), (7,7), (8,7)})
+    fleet = [s1,s2]
+    h = (6,7,fleet)
+    assert hit1(h) == ([s1],s2)
+
     #provide at least five tests in total for hit by the project submission deadline
 
 def test_are_unsunk_ships_left1():
-    #add at least one test for are_unsunk_ships_left by the deadline of session 7 assignment
+    s1 = (2, 3, False, 3, {(2,3), (3,3), (4,3)})
+    s2 = (6, 7, True, 3, {(6,7), (7,7), (8,7)})
+    fleet = [s1,s2]
+    assert are_unsunk_ships_left1(fleet) == True
     #provide at least five tests in total for are_unsunk_ships_left by the project submission deadline
     
